@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:first-child{ background: yellow !important;}
+        p:last-child{ background: green !important;}
+        p:nth-child(2),  p:nth-child(5){ background: skyblue;}
+        p:nth-child(odd){ background: pink;}
+        p:nth-child(even) { background: aqua;}
+        a:link{ color: yellow;}
+        a:visited{ color: red;}
+        a:hover{ color: aqua;}
+        a:active{ color: brown;}
+        input:disabled{ border: 2px solid yellow;}
+        input:read-only{ color: green;}
+        input:required{ background: saddlebrown;}
+        input:focus{ outline: 5px solid red;}
+        input:checked{ width: 40px; height: 40px; background: red;}
+        :root 
+        {
+            --abc: #c73939;
+            --w: 140px;
+        }
+        h1{ background: var(--abc); width: var(--w); height: var(--w);}
+    </style>
+</head>
+<body>
+    <h1>Hello</h1>
+    <input value="sajan" disabled>  <input type="text" value="sajan">  
+    <input type="text"  required>
+    <input readonly value="sajan">  <input type="checkbox" name="" id="">
+    <hr>
+    Pseudo class :
+    Links : 
+    <a href="https://google.com">Fb</a>  <a href="https:/hgvhdsvghd.com">Tw</a>
+    <div>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+</body>
+</html>

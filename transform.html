@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{ width: 200px; height: 200px; background: red; transition-duration: 3s;
+        transition-delay: 2s; transition-property: all; transition-timing-function: linear;
+        /* transition: all 3s linear 2s; */
+    }
+        .box:hover{ width: 400px; }
+
+    .item{ width: 200px; height: 200px; transition: 0.9s;}
+    .a{ background: green; transform-origin: center top; }
+    .a:hover{ transform: rotate(180deg);}
+    .b{ background: pink;}
+    .b:hover{ transform: skew(30deg, 40deg);}
+    .c{ background: orange;}
+    .c:hover{ transform: translate(-60px, -100px);}
+    .d{ background: blue; transform-origin: left top;}
+    .d:hover{ transform: scale(2, 3);}
+    </style>
+</head>
+<body>
+    <div class="box">A</div>
+    <div class="item a">B</div>
+    <div class="item b">C</div>
+    <div class="item c">C</div>
+    <div class="item d">D</div>
+</body>
+</html>

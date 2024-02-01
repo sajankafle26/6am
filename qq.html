@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ margin: 0; padding: 0;}
+        nav{ margin: 300px;}
+        nav li{ display: inline; position: relative;}
+        .sub li{ display: block;}
+        .sub{ position: absolute; left: 0; top: 100%; display: none;}
+        li:hover .sub{ display: block;}
+        .drop{ position: absolute; left: 110%; top: 0; display: none;}
+        .sub li:hover .drop{ display: block;}
+    </style>
+</head>
+<body>
+     <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a> 
+                <ul class="sub">
+                    <li><a href="">Mission</a>
+                        <ul class="drop">
+                            <li><a href="">Sajan</a></li>
+                            <li><a href="">Sajan</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Vission</a></li>
+                </ul>
+            </li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact Us</a>
+                <ul class="sub">
+                    <li><a href="">form</a></li>
+                    <li><a href="">map</a></li>
+                </ul>
+            </li>
+        </ul>
+     </nav>
+</body>
+</html>

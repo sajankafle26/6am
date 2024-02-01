@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{ background: skyblue;
+             display: flex;/* inline-flex, flex */
+             flex-direction: row;/* row, column, row-reverse, column-reverse*/
+             flex-wrap:nowrap ; /*nowrap, wrap ,wrap-reverse  */
+             /* flex-flow: row nowrap; */
+             justify-content:space-evenly ;/* start,end , center, space-between, space-around*/
+             height: 300px;
+             align-items: stretch;/* stretch ,end ,start ,center,baseline*/
+            }
+        .box{ border: 3px solid red; padding: 40px;  }
+    </style>
+</head>
+<body>
+ <div class="flex">
+    <div class="box" style="font-size: 66px;">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+</div>
+</body>
+</html>

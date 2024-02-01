@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .con p{ color: yellow;} /* descendant  */
+     .con > p { background: green;}  /* child */
+     .con + p{ font-size: 20px;}/* adjacent sibling  */
+     .con ~ p { color: brown;}/*general sibling    */
+    </style>
+</head>
+<body>
+    1. general  (class, element, id)
+    2. combinator 
+    3. Pseudo : class , element 
+    4. attribute
+    <div class="con">
+        <p>Lorem ipsum dolor sit.</p>  <p>Lorem ipsum dolor sit.</p>
+        <div class="child">
+            <p>child</p>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit.</p> <p>next</p>
+    <p>ssaj</p>
+</body>
+</html>

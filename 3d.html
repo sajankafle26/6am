@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grey{ width: 300px; height: 300px; background: grey;}
+        .red{ width: 300px; height: 300px; background: red;
+        transform:perspective(1000px) rotateY(20deg); transition: 0.9s;}
+        .grey:hover .red{  transform:perspective(1000px) rotate3d(0,1, 0, 180deg)}
+        .yellow{ width: 300px; height: 300px; background: yellow; transition: 0.9s;
+        transform:perspective(1000px) rotateY(30deg) translateZ(0px); }
+        .grey:hover .yellow{  transform:perspective(1000px) rotateY(30deg) translateZ(100px)}
+        .blue{ width: 300px; height: 300px; background: blue; transition: 0.9s;
+        transform:perspective(1000px) rotateX(30deg) scaleZ(1); }
+        .grey:hover .blue{  transform:perspective(100px) rotateX(30deg) scaleZ(3)}
+    </style>
+</head>
+<body>
+    <div class="grey">
+        <div class="red"></div>
+    </div>
+    <hr>
+    <div class="grey">
+        <div class="yellow"></div>
+    </div>
+    <hr>
+    <div class="grey">
+        <div class="blue"></div>
+    </div>
+</body>
+</html>

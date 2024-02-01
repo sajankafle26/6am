@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans:wght@400;500;600&display=swap');
+:root 
+{
+    --brand:#EB6632;
+    --secondary: #4069B2;
+    --w: #fff;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a 
+{
+    text-decoration: none;
+}
+ul 
+{
+    list-style: none;
+}
+body 
+{
+    font-family: 'Noto Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 
+{
+    font-family: 'Montserrat', sans-serif;
+}
+p 
+{
+    line-height: 1.7;
+    color: #6e6b6b;
+}
+.con 
+{
+    max-width: 1200px;
+    margin: auto;
+}
+.top
+{
+    background: #000;
+    line-height: 50px;
+}
+.top a 
+{
+    color: var(--w);
+    font-size: 14px;
+}
+.top a:hover 
+{
+    color: var(--brand);
+}
+.flex 
+{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+.top ul 
+{
+    display: flex;
+    gap: 20px;
+}
+.hero 
+{
+    background: linear-gradient(#0000006e, #0000007b), url(../img/slider03.jpg);
+    height: calc(100vh - 50px);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.logo img 
+{
+    width: 180px;
+}
+nav ul 
+{
+    display: flex;
+    gap: 30px;
+    font-weight: 600;
+}
+.ai 
+{
+    align-items: center;
+}
+nav a 
+{
+    color: var(--w);
+    padding: 10px;
+}
+nav a:hover , .active a
+{
+    background: var(--brand);
+}
+.hero-content 
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: var(--w);
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 90%;
+}
+.hero-content h1 
+{
+    font-size: 56px;
+}
+.hero-content h1 span 
+{
+    color: var(--brand);
+}
+.hero-content p 
+{
+    color: var(--w);
+}
+.btn 
+{
+    border: 2px solid var(--w);
+    border-radius: 30px;
+    display: inline-block;
+    margin: 30px 0;
+    padding: 10px 20px;
+    color: var(--w);
+}
+.btn:hover 
+{
+    background: var(--secondary);
+}
+.about 
+{
+    background: #f5f3f3;
+    padding: 50px 0;
+    text-align: center;
+}
+.title 
+{
+    font-size: 30px;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+.btn1
+{
+    border: 2px solid #000;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 30px 0;
+    padding: 10px 20px;
+    color: #000;
+}
+.trips
+{
+    padding: 50px 0;
+}
+.subtitle
+{
+    position: relative;
+    text-transform: uppercase;
+}
+.subtitle::after 
+{
+    content: '';
+    width: 50px;
+    height: 5px;
+    background: var(--secondary);
+    position: absolute;
+    top: 120%;
+    left: 0;
+}
+.card 
+{
+    width: 373px;
+    box-shadow: 0px 0px 12px 3px #ccc;
+}
+.card-img
+{
+    overflow: hidden;
+    position: relative;
+}
+.card-img img 
+{
+    width: 100%;
+    transition: 0.9s;
+}
+.trips-inner
+{
+    padding: 40px 0;
+}
+.card-img img:hover 
+{
+    transform: scale(1.2);
+}
+.card-img-inner
+{
+    width: 100%;
+    height: 90px;
+    background: var(--secondary);
+    position: absolute;
+    bottom: -90px;
+    transition: 0.9s;
+}
+.card-img:hover .card-img-inner
+{
+    bottom: 0;
+}
+.card-body
+{
+    padding: 20px;
+}
+
+.trips-inner
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.subscribe
+{
+    background: linear-gradient(#00000044, #00000058),url(../img/subscribeBG.jpg);
+   
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 50px 0;
+}
+.subscribe-form 
+{
+    margin: 40px 0;
+ 
+}
+.subscribe-form input 
+{
+    width: 300px;
+    height: 45px;
+    padding: 20px;
+}
+.submit
+{
+    background: var(--secondary);
+    padding: 13px 20px;
+    color: var(--w);
+    border: none;
+}
+.team
+{
+    padding: 50px 0;
+}
+.team img 
+{
+    width: 100%;
+}
+.mySwiper
+{
+    padding: 40px 0;
+}
+.testimonials
+{
+    background: linear-gradient(#00000044, #00000058),url(../img/testimonialsBG.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+.thumb
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.testimonials p 
+{
+    color: var(--w);
+}
+.testimonials h2 
+{
+    padding: 40px 0;
+}
+footer
+{
+   background: #0E0E0E;
+   padding: 50px 0;
+   color: var(--w);
+}
+footer a 
+{
+    color: var(--w);
+}
+footer li 
+{
+    line-height: 30px;
+}
+footer h4 
+{
+    padding-bottom: 20px;
+}
+.wrap
+{
+    flex-wrap: wrap;
+}
+.footer-box
+{
+    width: 20%;
+}
+.one 
+{
+    flex-basis: 400px;
+}
+.copright
+{
+    color: var(--w);
+    padding: 10px;
+    text-align: center;
+    background-color: #000;
+}
