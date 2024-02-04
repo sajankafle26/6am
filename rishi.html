@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+ 
+.box {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background: red;
+  animation-name: move;
+  animation-duration: 3s;
+  animation-iteration-count: 1; /* infinite*/
+  animation-direction: alternative; /* noraml, alternate, reverse, alternate-reverse */
+  animation-fill-mode: both; /* both, backward, forward*/
+  animation-delay: 2s;
+}
+@keyframes move {
+  0%,
+  from {
+    left: 0;
+    top: 0;
+    background: yellow;
+  }
+  50% {
+    left: 300px;
+    top: 50px;
+    background: rgb(0, 255, 42);
+  }
+  100%,
+  to {
+    left: 600px;
+    bottom: 20px;
+    background: red;
+  }
+}
+.box:hover {
+  animation-play-state: paused;
+}
+.box1 {
+    width: 120px;
+    height: 120px;
+    background: skyblue;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+  }
+  @keyframes move {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+</html>

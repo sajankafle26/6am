@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{ width: 0; white-space: pre; overflow: hidden; border-right: 3px solid; animation: typing  3.5s steps(40, end) forwards, blink .75s step-end infinite backwards, mm 2s linear 5s forwards; 
+            position: absolute;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+        @keyframes typing {
+            0%{ width: 0;}   100%{ width: 400px;}
+        }
+        @keyframes blink {
+            0%{ border-right-color: orange;}  100%{ border-right-color: transparent;}
+        }
+        @keyframes mm {
+          0%{ left: 0px;} 100%{ left: 600px;}  
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+</body>
+</html>
