@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{ border: 2px solid #000; padding: 20px;}
+        .g{ display: grid;  background: pink; gap: 20px;
+            grid-template-areas: 'head head head' 'c nav nav' 'c d e' 'f f f';}
+        .a{ grid-area: head;}
+        .b{ grid-area: nav;}
+        .c{ grid-area: c;}
+        .d{ grid-area: d;}
+        .e{ grid-area: e;}
+        .f{ grid-area: f;}
+       
+    </style>
+</head>
+<body>
+    <div class="g">
+        <div class="box a">Header</div>
+        <div class="box b">nav</div>
+        <div class="box c">left</div>
+        <div class="box d">mid</div>
+        <div class="box e">right</div>
+        <div class="box f">footer</div>
+    </div>
+</body>
+</html>
