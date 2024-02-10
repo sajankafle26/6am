@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Quicksand:wght@300;400&display=swap');
+:root 
+{
+    --grey: #666666;
+    --green: #00B207;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a 
+{
+    text-decoration: none;
+}
+ul 
+{
+    list-style: none;
+}
+body 
+{
+    font-family: 'Quicksand', sans-serif;
+}
+p 
+{
+    color: var(--grey);
+    line-height: 1.7;
+}
+h1,h2,h3,h4,h5,h6 
+{
+    font-family: 'Poppins', sans-serif;
+}
+.con 
+{
+    max-width: 1320px;
+    margin: auto;
+}
+.top 
+{
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    color: var(--grey);
+}
+.grid 
+{
+    display: grid;
+}
+.col-2 
+{
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+.top ul  
+{
+    display: flex;
+    gap: 20px;
+}
+.info li:last-child 
+{
+    border-left: 1px solid #999;
+    padding-left: 10px;
+}
+header 
+{
+    padding: 27px 0;
+}
+.col-3 
+{
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+.searchinput
+{
+    width: 400px;
+    height: 45px;
+    border: 1px solid #ccc;
+    padding-left: 40px;
+    background: url(../img/search.png) no-repeat;
+    background-position: 10px 14px;
+}
+.btn 
+{
+    background: var(--green);
+    border-radius: 0 6px 6px 0;
+    color: #fff;
+    padding: 14px 30px;
+    border: none;
+}
+.cart
+{
+    text-align: right;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: end;
+    gap: 20px;
+    align-items: center;
+}
+.cart i 
+{
+    font-size: 33px;
+}
+.cartinfo
+{
+    font-size:12px;
+}
+.cartinfo span 
+{
+    font-weight: bold;
+}
+nav 
+{
+    background: #333333;
+    line-height: 50px;
+}
+nav ul 
+{
+    display: flex;
+    gap: 30px;
+}
+nav a 
+{
+    color: #fff;
+}
+.white 
+{
+    color: #fff;
+}
+.banner
+{
+    padding: 40px 0;
+}
+.banner .grid 
+{
+     display: grid;
+     grid-template-columns: 900px 400px;
+}
+.lightgreen
+{
+    height: 50vh;
+    background: lightgreen;
+}
+.green
+{
+    height: 45vh;
+    background: green;
+    margin-top: 20px;
+}
+nav span 
+{
+    font-size: 33px;
+    display: none;
+}
+.featured
+{
+    box-shadow: 0px 5px 5px 10px #ccc;
+    padding: 30px;
+}
+.col-5 
+{
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    gap: 20px;
+}
+.col-5 > div 
+{
+    display: flex;
+    gap: 20px;
+}
+.col-10
+{
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 20px;
+    text-align: center;
+}
+.col-10 > div:hover
+{
+    box-shadow: 0px 0px 12px var(--green);
+}
+.category
+{
+    padding: 40px 0;
+}

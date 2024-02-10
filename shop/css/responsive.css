@@ -1,0 +1,11 @@
+@media(max-width: 480px)
+{
+    .grid, .banner .grid{ grid-template-columns: auto;}
+    .con { padding: 0px 20px;}
+    .banner .grid img { width: 100%;}
+    .top, header form{ display: none !important;}
+    .cart{position: absolute;  right: 20px; display: flex;}
+    nav span{ display: block; color: #fff;}
+    nav ul, .banner-left{ display: none; }
+    .white{ display: none;}
+}

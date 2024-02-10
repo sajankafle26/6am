@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{ border: 2px solid #000; padding: 30px;}
+        .g{ display: grid; grid-template-columns: auto auto auto auto auto; gap: 20px;}
+        .a{ grid-row: 1/6;}
+        .b{ grid-column: 2/6;}
+        .c{ grid-row: 2/6;}
+        .d{ grid-column: 3/5;}
+        .e{ grid-row: 2/6; grid-column: 5;}
+        .v{ grid-column: 3/5;}
+        .vv{ grid-column: 3/5;}
+    </style>
+</head>
+<body>
+    <div class="g">
+        <div class="box a"></div>
+        <div class="box b"></div>
+        <div class="box c"></div>
+        <div class="box d"></div>
+        <div class="box e"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box v"></div>
+        <div class="box vv"></div>
+    </div>
+</body>
+</html>
