@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Laila", serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+.top {
+  background: #021E59;
+}
+.top a {
+  color: #fff;
+  font-size: 14px;
+}
+.top .info i {
+  color: #2F982B;
+}
+
+.navbar-brand img {
+  width: 170px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #787780;
+  position: relative;
+}
+.navbar-expand-lg .navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #2F982B;
+  top: 100%;
+  left: 0;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.search {
+  position: relative;
+  top: -60px;
+}
+
+.tour .content {
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  z-index: 9999;
+}
+.tour .content h5 {
+  color: #2F982B;
+}
+.tour .cover {
+  width: 100%;
+  height: 0%;
+  background: rgba(0, 0, 0, 0.4117647059);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  z-index: 999;
+}
+.tour .tour-box {
+  overflow: hidden;
+}
+.tour .tour-box img {
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  height: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+}
+.tour .tour-box:hover .cover {
+  height: 100%;
+}
+.tour .tour-box:hover img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px;
+}
+
+.aaaaa {
+  position: sticky;
+  top: 0;
+  -webkit-animation: fadeOut 2s;
+          animation: fadeOut 2s;
+  z-index: 10000000000000000;
+  -webkit-box-shadow: 0px 0px 12px 13px #ccc;
+          box-shadow: 0px 0px 12px 13px #ccc;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}/*# sourceMappingURL=style.css.map */
