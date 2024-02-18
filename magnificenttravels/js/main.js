@@ -1,3 +1,4 @@
+AOS.init();
 window.addEventListener("scroll", (event) => {
    var a=scrollY;
    if(a > 150)

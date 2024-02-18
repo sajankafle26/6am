@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -43,7 +44,9 @@
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img src="img/logo-1.png" alt="">
+                    </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -68,9 +71,18 @@
                             <a class="nav-link" href="#">Destinations</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About us</a>
-                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              About Us
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                  
                         <li class="nav-item">
                             <a class="nav-link" href="#"> Contact us</a>
                         </li>
@@ -83,40 +95,48 @@
 
     <section class="banner">
         <img class="w-100" src="img/main-slider-1-2.jpg" alt="">
+        <div class="banner-content text-center">
+            <h2 data-aos="fade-up"
+            data-aos-duration="3000">Magnificent Travels</h2>
+            <p data-aos="fade-down"
+            data-aos-duration="3000">Where Would You Like To Go?</p>
+        </div>
     </section>
     <section class="search">
-        <div class="container bg-light rounded shadow">
+        <div class="container bg-white rounded shadow">
             <div class="row">
-                <div class="col-lg-3 p-4">
+                <div class="col-lg-3 p-4 border-end">
                     Where to
                     <select class="form-select form-select-lg mb-3  " aria-label="Large select example">
                         <option selected>Open this select menu</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
-                      </select>
-                      
+                    </select>
+
                 </div>
-                <div class="col-lg-3">
-                    <select class="form-select form-select-lg mb-3  p-4" aria-label="Large select example">
+                <div class="col-lg-3 p-4 border-end">
+                    Where to
+                    <select class="form-select form-select-lg mb-3 " aria-label="Large select example">
                         <option selected>Open this select menu</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
-                      </select>
-                      
+                    </select>
+
                 </div>
-                <div class="col-lg-3">
-                    <select class="form-select form-select-lg mb-3  p-4" aria-label="Large select example">
+                <div class="col-lg-3 p-4 border-end">
+                    Where to
+                    <select class="form-select form-select-lg mb-3 " aria-label="Large select example">
                         <option selected>Open this select menu</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
-                      </select>
-                      
+                    </select>
+
                 </div>
                 <div class="col-lg-3">
-                    <button class="btn btn-success  p-4">Find Now</button>
+                    <button class="btn btn-success  mt-4 p-4">Find Now</button>
                 </div>
             </div>
         </div>
@@ -132,45 +152,45 @@
             <div class="row g-4">
                 <div class="col-lg-7">
                     <div class="position-relative tour-box">
-                    <img class="w-100" src="img/nepal.jpg" alt="">
-                    <div class="content position-absolute">
-                        <h5>Cultural</h5>
-                        <h3>Nepal</h3>
+                        <img class="w-100" src="img/nepal.jpg" alt="">
+                        <div class="content position-absolute">
+                            <h5>Cultural</h5>
+                            <h3>Nepal</h3>
+                        </div>
+                        <div class="cover"></div>
                     </div>
-                    <div class="cover"></div>
-                </div>
                 </div>
                 <div class="col-lg-5">
                     <div class="position-relative tour-box">
-                    <img class="w-100" src="img/tibet.jpg" alt="">
-                    <div class="content position-absolute">
-                        <h5>Cultural</h5>
-                        <h3>Nepal</h3>
+                        <img class="w-100" src="img/tibet.jpg" alt="">
+                        <div class="content position-absolute">
+                            <h5>Cultural</h5>
+                            <h3>Nepal</h3>
+                        </div>
+                        <div class="cover"></div>
                     </div>
-                    <div class="cover"></div>
-                </div>
                 </div>
 
                 <div class="col-lg-5">
                     <div class="position-relative tour-box">
-                    <img class="w-100" src="img/tibet.jpg" alt="">
-                    <div class="content position-absolute">
-                        <h5>Cultural</h5>
-                        <h3>Nepal</h3>
+                        <img class="w-100" src="img/tibet.jpg" alt="">
+                        <div class="content position-absolute">
+                            <h5>Cultural</h5>
+                            <h3>Nepal</h3>
+                        </div>
+                        <div class="cover"></div>
                     </div>
-                    <div class="cover"></div>
-                </div>
                 </div>
 
                 <div class="col-lg-7">
                     <div class="position-relative tour-box">
-                    <img class="w-100" src="img/india.jpg" alt="">
-                    <div class="content position-absolute">
-                        <h5>Cultural</h5>
-                        <h3>Nepal</h3>
+                        <img class="w-100" src="img/india.jpg" alt="">
+                        <div class="content position-absolute">
+                            <h5>Cultural</h5>
+                            <h3>Nepal</h3>
+                        </div>
+                        <div class="cover"></div>
                     </div>
-                    <div class="cover"></div>
-                </div>
                 </div>
             </div>
         </div>
@@ -181,30 +201,36 @@
             <div class="row align-items-center">
                 <div class="col-lg-5">
                     <div class="position-relative">
-                    <img class="w-100" src="img/about-one-img-1.png" alt="">
-                    <div class="position-absolute top-50 start-50 translate-middle" data-bs-toggle="modal" data-bs-target="#abc">
-                        <div class="circle"><i class="fa-solid fa-play"></i></div>
+                        <img data-aos="fade-right"
+                        data-aos-duration="3000" class="w-100" src="img/about-one-img-1.png" alt="">
+                        <div class="position-absolute top-50 start-50 translate-middle" data-bs-toggle="modal"
+                            data-bs-target="#abc">
+                            <div class="circle"><i class="fa-solid fa-play"></i></div>
+                        </div>
                     </div>
                 </div>
-                </div>
-                <div class="col-lg-6 offset-lg-1">
+                <div class="col-lg-6 offset-lg-1" data-aos="fade-left"
+                data-aos-duration="3000">
                     <h5>Get to know us</h5>
                     <h2> Plan Your Trip with Magnificent </h2>
                     <p class="text-secondary">We are Magnificent Travels operating from Kathmandu, Nepal.
-                        28 years of our experience on handling tours, vastly experienced  tours,  trekking and rafting staffs that we select to assist you, together make possible for you a safe, comfortable, and memorable holiday trip to Nepal -the land of Natural beauty.
-                        Our team has developed specific tours that fit the needs of travelers from around the globe, also those of seasonal tours.</p>
+                        28 years of our experience on handling tours, vastly experienced tours, trekking and rafting
+                        staffs that we select to assist you, together make possible for you a safe, comfortable, and
+                        memorable holiday trip to Nepal -the land of Natural beauty.
+                        Our team has developed specific tours that fit the needs of travelers from around the globe,
+                        also those of seasonal tours.</p>
 
-                        <ul>
-                            <li>
+                    <ul>
+                        <li>
 
-                                We organize tours to Bhutan and Tibet</li>
-                                <li>   
-                                We can arrange flights as you require</li>
-                                <li> 
-                                To assist you in planning your tour to Nepal
-                                </li>
-                        </ul>
-                        <a href="" class="bg-success px-3 text-light d-inline-block my-3">Know Us</a>
+                            We organize tours to Bhutan and Tibet</li>
+                        <li>
+                            We can arrange flights as you require</li>
+                        <li>
+                            To assist you in planning your tour to Nepal
+                        </li>
+                    </ul>
+                    <a href="" class="bg-success px-3 text-light d-inline-block my-3">Know Us</a>
                 </div>
             </div>
         </div>
@@ -218,152 +244,300 @@
         </div>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="card" >
-                    <img src="https://www.magnificenttravels.com/assets/images/mardi-himal-trekking-thumb.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Mardi Himal Trekking</h5>
-                      <p class="card-text"><span class="text-success fw-bold">Price</span> : contact us</p>
-                      <div class="d-flex justify-content-between">
-                      <a href="#" class="btn btn-primary">15 Days</a>
-                      <a href="#" class="btn btn-primary">Nepal</a>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="https://www.magnificenttravels.com/assets/images/mardi-himal-trekking-thumb.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mardi Himal Trekking</h5>
+                            <p class="card-text"><span class="text-success fw-bold">Price</span> : contact us</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-primary">15 Days</a>
+                                <a href="#" class="btn btn-primary">Nepal</a>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="https://www.magnificenttravels.com/assets/images/mardi-himal-trekking-thumb.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mardi Himal Trekking</h5>
+                            <p class="card-text"><span class="text-success fw-bold">Price</span> : contact us</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-primary">15 Days</a>
+                                <a href="#" class="btn btn-primary">Nepal</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card" >
-                    <img src="https://www.magnificenttravels.com/assets/images/mardi-himal-trekking-thumb.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Mardi Himal Trekking</h5>
-                      <p class="card-text"><span class="text-success fw-bold">Price</span> : contact us</p>
-                      <div class="d-flex justify-content-between">
-                      <a href="#" class="btn btn-primary">15 Days</a>
-                      <a href="#" class="btn btn-primary">Nepal</a>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="https://www.magnificenttravels.com/assets/images/mardi-himal-trekking-thumb.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mardi Himal Trekking</h5>
+                            <p class="card-text"><span class="text-success fw-bold">Price</span> : contact us</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-primary">15 Days</a>
+                                <a href="#" class="btn btn-primary">Nepal</a>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="https://www.magnificenttravels.com/assets/images/mardi-himal-trekking-thumb.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mardi Himal Trekking</h5>
+                            <p class="card-text"><span class="text-success fw-bold">Price</span> : contact us</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-primary">15 Days</a>
+                                <a href="#" class="btn btn-primary">Nepal</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card" >
-                    <img src="https://www.magnificenttravels.com/assets/images/mardi-himal-trekking-thumb.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Mardi Himal Trekking</h5>
-                      <p class="card-text"><span class="text-success fw-bold">Price</span> : contact us</p>
-                      <div class="d-flex justify-content-between">
-                      <a href="#" class="btn btn-primary">15 Days</a>
-                      <a href="#" class="btn btn-primary">Nepal</a>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="https://www.magnificenttravels.com/assets/images/mardi-himal-trekking-thumb.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mardi Himal Trekking</h5>
+                            <p class="card-text"><span class="text-success fw-bold">Price</span> : contact us</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-primary">15 Days</a>
+                                <a href="#" class="btn btn-primary">Nepal</a>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="https://www.magnificenttravels.com/assets/images/mardi-himal-trekking-thumb.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mardi Himal Trekking</h5>
+                            <p class="card-text"><span class="text-success fw-bold">Price</span> : contact us</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-primary">15 Days</a>
+                                <a href="#" class="btn btn-primary">Nepal</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card" >
-                    <img src="https://www.magnificenttravels.com/assets/images/mardi-himal-trekking-thumb.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Mardi Himal Trekking</h5>
-                      <p class="card-text"><span class="text-success fw-bold">Price</span> : contact us</p>
-                      <div class="d-flex justify-content-between">
-                      <a href="#" class="btn btn-primary">15 Days</a>
-                      <a href="#" class="btn btn-primary">Nepal</a>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="https://www.magnificenttravels.com/assets/images/mardi-himal-trekking-thumb.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mardi Himal Trekking</h5>
+                            <p class="card-text"><span class="text-success fw-bold">Price</span> : contact us</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-primary">15 Days</a>
+                                <a href="#" class="btn btn-primary">Nepal</a>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="https://www.magnificenttravels.com/assets/images/mardi-himal-trekking-thumb.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mardi Himal Trekking</h5>
+                            <p class="card-text"><span class="text-success fw-bold">Price</span> : contact us</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-primary">15 Days</a>
+                                <a href="#" class="btn btn-primary">Nepal</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card" >
-                    <img src="https://www.magnificenttravels.com/assets/images/mardi-himal-trekking-thumb.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Mardi Himal Trekking</h5>
-                      <p class="card-text"><span class="text-success fw-bold">Price</span> : contact us</p>
-                      <div class="d-flex justify-content-between">
-                      <a href="#" class="btn btn-primary">15 Days</a>
-                      <a href="#" class="btn btn-primary">Nepal</a>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="https://www.magnificenttravels.com/assets/images/mardi-himal-trekking-thumb.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mardi Himal Trekking</h5>
+                            <p class="card-text"><span class="text-success fw-bold">Price</span> : contact us</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-primary">15 Days</a>
+                                <a href="#" class="btn btn-primary">Nepal</a>
+                            </div>
+                        </div>
                     </div>
-                    </div>
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card" >
-                    <img src="https://www.magnificenttravels.com/assets/images/mardi-himal-trekking-thumb.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Mardi Himal Trekking</h5>
-                      <p class="card-text"><span class="text-success fw-bold">Price</span> : contact us</p>
-                      <div class="d-flex justify-content-between">
-                      <a href="#" class="btn btn-primary">15 Days</a>
-                      <a href="#" class="btn btn-primary">Nepal</a>
-                    </div>
-                    </div>
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card" >
-                    <img src="https://www.magnificenttravels.com/assets/images/mardi-himal-trekking-thumb.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Mardi Himal Trekking</h5>
-                      <p class="card-text"><span class="text-success fw-bold">Price</span> : contact us</p>
-                      <div class="d-flex justify-content-between">
-                      <a href="#" class="btn btn-primary">15 Days</a>
-                      <a href="#" class="btn btn-primary">Nepal</a>
-                    </div>
-                    </div>
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card" >
-                    <img src="https://www.magnificenttravels.com/assets/images/mardi-himal-trekking-thumb.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Mardi Himal Trekking</h5>
-                      <p class="card-text"><span class="text-success fw-bold">Price</span> : contact us</p>
-                      <div class="d-flex justify-content-between">
-                      <a href="#" class="btn btn-primary">15 Days</a>
-                      <a href="#" class="btn btn-primary">Nepal</a>
-                    </div>
-                    </div>
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card" >
-                    <img src="https://www.magnificenttravels.com/assets/images/mardi-himal-trekking-thumb.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Mardi Himal Trekking</h5>
-                      <p class="card-text"><span class="text-success fw-bold">Price</span> : contact us</p>
-                      <div class="d-flex justify-content-between">
-                      <a href="#" class="btn btn-primary">15 Days</a>
-                      <a href="#" class="btn btn-primary">Nepal</a>
-                    </div>
-                    </div>
-                  </div>
-              </div>
+                </div>
             </div>
             <div class="swiper-pagination"></div>
-          </div>
+        </div>
     </section>
 
+    <section class="py-5 tour-type">
+        <div class="container">
+            <div class="text-center py-4">
+                <h5>Find the best tour</h5>
+                <h2>Choose Tour Types</h2>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-3">
+                    <div class="tt-box">
+                        <span>
+                            <i class="fa-solid fa-hand-spock"></i>
+                            <h4 class="py-3">
+                                Jungle Safari
+                            </h4>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="tt-box">
+                        <span>
+                            <i class="fa-solid fa-hand-spock"></i>
+                            <h4 class="py-3">
+                                Jungle Safari
+                            </h4>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="tt-box">
+                        <span>
+                            <i class="fa-solid fa-hand-spock"></i>
+                            <h4 class="py-3">
+                                Jungle Safari
+                            </h4>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="tt-box">
+                        <span>
+                            <i class="fa-solid fa-hand-spock"></i>
+                            <h4 class="py-3">
+                                Jungle Safari
+                            </h4>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="tt-box">
+                        <span>
+                            <i class="fa-solid fa-hand-spock"></i>
+                            <h4 class="py-3">
+                                Jungle Safari
+                            </h4>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-5 text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="https://www.magnificenttravels.com/theme/images/resources/footer-logo.png" alt="">
+                    <ul class="py-4">
+                        <li class="d-flex gap-2 align-items-center"><i class="fa-solid fa-map"></i> GPO Box: 11026
+                            Thamel, Kathmandu, Nepal</li>
+                        <li class="d-flex gap-2 align-items-center"><i class="fa-solid fa-phone"></i> +977 9851052686
+                            (Badri)</li>
+                        <li class="d-flex gap-2 align-items-center"><i class="fa-solid fa-phone"></i> +977 9851048192
+                            (Govinda)</li>
+                        <li class="d-flex gap-2 align-items-center"><i class="fa-solid fa-phone"></i>
+                            info@magnificenttravels.com</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 info">
+                    <h4 class="pb-3">Company</h4>
+                    <ul>
+                        <li><a href=""> About Us</a></li>
+                        <li><a href=""> Our Team</a></li>
+                        <li><a href=""> Frequent Questions</a></li>
+                        <li><a href=""> Ultimate Adventure</a></li>
+                        <li><a href=""> Day Tours</a></li>
+                        <li><a href=""> Jungle Safaris</a></li>
+                        <li><a href=""> Blogs & Updates</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 info">
+                    <h4 class="pb-3">Tours in Nepal</h4>
+                    <ul class="pb-5">
+                        <li><a href="">  10 Days Nepal Tour Package </a></li>
+                        <li><a href=""> Nepal Buddhist pilgrimage Tour</a></li>
+                        <li><a href=""> Nepal Panorama Tour</a></li>
+                        
+
+                    </ul>
+                    <h4 class="py-3">Tours in Tibet</h4>
+                    <ul>
+                        <li><a href="">  10 Days Nepal Tour Package </a></li>
+                        <li><a href=""> Nepal Buddhist pilgrimage Tour</a></li>
+                        <li><a href=""> Nepal Panorama Tour</a></li>
+                        
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 info">
+                    <h4 class="pb-3">Tours in Nepal</h4>
+                    <ul class="pb-5">
+                        <li><a href="">  10 Days Nepal Tour Package </a></li>
+                        <li><a href=""> Nepal Buddhist pilgrimage Tour</a></li>
+                        <li><a href=""> Nepal Panorama Tour</a></li>
+                        
+
+                    </ul>
+                    <h4 class="py-3">Tours in Tibet</h4>
+                    <ul>
+                        <li><a href="">  10 Days Nepal Tour Package </a></li>
+                        <li><a href=""> Nepal Buddhist pilgrimage Tour</a></li>
+                        <li><a href=""> Nepal Panorama Tour</a></li>
+                        
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright bg-light p-5 text-dark  rounded mt-5">
+            
+
+© 1995 — 2024 Magnificent Travels & Tours.
+
+Designed by Nepal Media
+
+        </div>
+    </footer>
+
     <!-- Modal -->
-<div class="modal fade" id="abc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade" id="abc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
     </div>
-  </div>
-  
+
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/f10ce3d498.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
- 
+
 </body>
 
 </html>

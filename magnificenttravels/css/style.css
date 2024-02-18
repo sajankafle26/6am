@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
-h1, h2, h3, h4, h5, h6 {
+@font-face {
+  font-family: "Reey-Regular";
+  src: url("../fonts/Reey-Regular.ttf.woff") format("woff");
+}
+h1, h2, h3, h4, h6 {
   font-family: "Laila", serif;
+  font-weight: 700;
+}
+
+h5 {
+  font-family: "Reey-Regular";
+  color: #2F982B;
 }
 
 ul {
@@ -145,4 +155,150 @@ ul {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
   }
+}
+.tour-type {
+  background: #E9FFE8;
+}
+.tour-type .tt-box {
+  background: #fff;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  min-height: 140px;
+}
+.tour-type .tt-box i {
+  color: #2F982B;
+  font-size: 55px;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+.tour-type .tt-box h4 {
+  font-size: 18px;
+}
+.tour-type .tt-box span {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+.tour-type .tt-box::after {
+  width: 100%;
+  height: 100%;
+  background: #2F982B;
+  top: 100%;
+  left: 0;
+  position: absolute;
+  content: "";
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+.tour-type .tt-box:hover::after {
+  top: 0;
+}
+.tour-type .tt-box:hover i {
+  color: #fff;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.tour-type .tt-box:hover h4 {
+  color: #fff;
+}
+@media (min-width: 992px) {
+  .tour-type .col-lg-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 20%;
+  }
+}
+
+footer {
+  background: #021E59;
+  overflow: hidden;
+}
+footer .info li {
+  line-height: 1.7;
+}
+footer .info li:hover::before {
+  content: "-";
+  color: #2F982B;
+}
+footer .info li a {
+  color: #787780;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+footer .info li a:hover {
+  margin-left: 10px;
+}
+
+@media (min-width: 992px) {
+  .copyright {
+    position: relative;
+    left: 100px;
+  }
+}
+.banner {
+  position: relative;
+  padding: 0 0 30px 0;
+}
+.banner-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50%;
+}
+.banner-content h2 {
+  font-family: "Reey-Regular";
+  color: #ffc107;
+  font-size: 60px;
+}
+.banner-content p {
+  font-size: 20px;
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .banner-content h2 {
+    font-size: 30px;
+  }
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item:hover {
+  background: #2F982B;
+  color: #fff;
+}
+
+.bg-white {
+  background: #fff;
+}
+
+.form-select {
+  border: none;
+  padding: 0px;
+  font-size: 15px;
+  color: #787780;
+}
+
+.form-select:focus {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.breadcrumb-a {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5019607843)), to(rgba(0, 0, 0, 0.6196078431))), url(https://www.magnificenttravels.com/assets/images/page-header-bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5019607843), rgba(0, 0, 0, 0.6196078431)), url(https://www.magnificenttravels.com/assets/images/page-header-bg.jpg);
+  background-size: cover;
+  padding: 100px 0;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
