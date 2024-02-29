@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img width="100" height="100" src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg" id="a">
+
+    <button onclick="document.querySelector('#a').src='https://cdn.britannica.com/84/73184-050-05ED59CB/Sunflower-field-Fargo-North-Dakota.jpg'">1</button>
+    <button>2</button>
+
+    <hr>
+    <input type="password" id="n">
+    <button id="btn" onclick="abc()">show</button>
+  
+    <script>
+        function abc(){
+            if(document.querySelector('#btn').innerHTML=='show')
+            {
+            document.querySelector('#btn').innerHTML='Hide'
+            document.querySelector('#n').type='text'
+            }
+            else 
+            {
+                document.querySelector('#btn').innerHTML='show'
+                document.querySelector('#n').type='password'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Demo</h1>
+    <button class="a">Hide</button>   <button class="b">Show</button>   <button class="c">toggle</button>
+    <button class="d">slideUp</button>
+    <button class="e">slideDown</button>
+    <button class="f">slideToggle</button>
+
+    <button class="g">fadeOut</button>
+    <button class="h">fadeIn</button>
+    <button class="i">fadeToggle</button>
+    <button class="j">fadeTo</button>
+
+    <button class="k">addClass</button>
+    <button class="l">removeClass</button>
+    <button class="m">toggleClass</button>
+    <button class="n">css</button>
+    <button class="o">remove</button>
+    <button class="p">empty</button>
+
+    <button class="q">append</button>
+    <button class="r">prepend</button>
+    <button class="s">after</button>
+    <button class="t">before</button>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $('.s').click(function(){
+            $('h1').after('<input>')
+        })
+        $('.n').click(function(){
+            $('h1').css({'color': 'red', 'background' : 'yellow'})
+        })
+        $('.o').click(function(){
+            $('h1').remove()
+        })
+        $('.p').click(function(){
+            $('h1').empty()
+        })
+    </script>
+</body>
+</html>
